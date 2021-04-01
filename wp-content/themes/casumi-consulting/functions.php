@@ -148,6 +148,12 @@ function casumi_consulting_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	/**
+	 * Bootstrap
+	 */
+	wp_enqueue_style('bootstrap_css', get_stylesheet_directory_uri() . '/dist/css/bootstrap.min.css', array(), _S_VERSION);
+	wp_enqueue_script('bootstrap_js', get_stylesheet_directory_uri() . '/dist/js/bootstrap.bundle.min.js', array('jquery'), _S_VERSION, true);
 }
 add_action( 'wp_enqueue_scripts', 'casumi_consulting_scripts' );
 

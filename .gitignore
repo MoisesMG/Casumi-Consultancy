@@ -15,6 +15,8 @@
 /*
 !.gitignore
 !wp-content/
+!install.sh
+!README.md
  
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
@@ -29,5 +31,59 @@ wp-content/*
  
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
-# wp-content/themes/*
-# !wp-content/themes/my-theme/
+wp-content/themes/*
+!wp-content/themes/casumi-consulting/
+
+# NPM #
+##########
+# Ignore all directories called node_modules in current folder and any subfolders.
+node_modules/
+/node_modules/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.map
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.env
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# Composer #
+##########
+!assets/js/vendor/
+wpcs/
+# /vendor/
+
+# Bower #
+##########
+assets/bower_components/*
