@@ -1,4 +1,4 @@
-<div class="custom-cpt cta-cpt">
+<div class="custom-cpt cta-cpt mx-auto mx-lg-0">
     <?php if ( get_sub_field('sub_heading_cta') ): ?>
         <h3 class="sub-heading-cta mb-3 fw-bold"><?php the_sub_field('sub_heading_cta'); ?></h3>
     <?php endif; ?>

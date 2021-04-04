@@ -5,7 +5,7 @@
         {
             "key": "field_606608ea9c8b4",
             "label": "Icon",
-            "name": "icon",
+            "name": "icon_icon_box",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -29,7 +29,7 @@
         {
             "key": "field_606609009c8b5",
             "label": "Heading",
-            "name": "heading",
+            "name": "heading_icon_box",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -48,7 +48,7 @@
         {
             "key": "field_606609119c8b6",
             "label": "Content",
-            "name": "content",
+            "name": "content_icon_box",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617503933
+    "modified": 1617559535
 }

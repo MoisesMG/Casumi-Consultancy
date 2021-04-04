@@ -46,6 +46,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_606a02d6fc92a": {
+                    "key": "layout_606a02d6fc92a",
+                    "name": "section_common",
+                    "label": "Section Common",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_606a02e3fc92b",
+                            "label": "Section Common",
+                            "name": "section_common",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_606a01aeeb788"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Section",
@@ -72,5 +103,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617504993
+    "modified": 1617560325
 }

@@ -1,5 +1,5 @@
 <?php if( have_rows('image_slider') ): ?>
-<div class="custom-cpt image-slider-cpt">
+<div class="custom-cpt slider-cpt image-slider-cpt mx-auto mx-lg-0">
     <?php 
         while( have_rows('image_slider') ): the_row(); 
         $image = get_sub_field('image_slide');
@@ -8,9 +8,9 @@
         $size = 'image_slide';
         $thumb = $image['sizes'][ $size ];
     ?>
-    <div class="slide-item">
-        <img class="gallery-image" src="<?php echo $thumb ?>" alt="<?php echo $alt ?>">
-    </div>
+    
+        <img class="slide-item image-slide-item" src="<?php echo esc_url( $thumb ); ?>" alt="<?php echo esc_attr( $alt ); ?>">
+    
     <?php endwhile; ?>
 </div>
 <?php endif; ?>

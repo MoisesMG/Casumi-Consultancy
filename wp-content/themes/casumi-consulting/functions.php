@@ -244,6 +244,23 @@ function get_current_url(){
 }
 
 /*
+ *  ACF Utilities
+* */
+
+/**
+ * Counts rows for Repeater and Flexible Content field types
+*/
+function count_rows( $field ){
+	$rows = 0;
+	if( have_rows( $field ) ):
+		while( have_rows( $field) ): the_row();
+			$rows++;    
+		endwhile;
+	endif; 
+	return $rows;
+}
+
+/*
 * Images Sizes
 * */
-add_image_size( 'image_slide', 400, 500, true );
+add_image_size( 'image_slide', 350, 450, true );

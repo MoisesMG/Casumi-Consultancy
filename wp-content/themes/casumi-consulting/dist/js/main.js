@@ -6,8 +6,8 @@
             infinite: true,
             arrows: true,
             dots: false,
-            nextArrow: "<button type='button' class='slick-next'><i class='fas fa-chevron-right'></i></button>",
-            prevArrow: "<button type='button' class='slick-prev'>Previous</button>"
+            nextArrow: "<button type='button' class='btn rounded-0 bg-white slide-arrow slide-next'><i class='fas fa-chevron-right'></i></button>",
+            prevArrow: "<button type='button' class='btn rounded-0 bg-white slide-arrow slide-prev'><i class='fas fa-chevron-left'></i></button>"
         });
 
     });

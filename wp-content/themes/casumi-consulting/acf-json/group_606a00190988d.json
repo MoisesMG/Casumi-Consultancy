@@ -1,13 +1,13 @@
 {
-    "key": "group_606925c5b2db5",
-    "title": "Component-Image Slider",
+    "key": "group_606a00190988d",
+    "title": "Component-Icon Box Carousel",
     "fields": [
         {
-            "key": "field_606925d0e1feb",
-            "label": "Image Slider",
-            "name": "image_slider",
+            "key": "field_606a00329bada",
+            "label": "Icon Box Carousel",
+            "name": "icon_box_carousel",
             "type": "repeater",
-            "instructions": "Recommended Image Size: 350px (width) x 450px (height).\r\nHigher or smaller images will be crop and cover to the recommended size.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,17 +15,17 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_60692600e1fec",
+            "collapsed": "field_606a00489badb",
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "Add Slide",
+            "button_label": "Add Icon Box",
             "sub_fields": [
                 {
-                    "key": "field_60692600e1fec",
-                    "label": "Image",
-                    "name": "image_slide",
-                    "type": "image",
+                    "key": "field_606a00489badb",
+                    "label": "Icon Box",
+                    "name": "icon_box",
+                    "type": "clone",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,16 +34,13 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "clone": [
+                        "group_606608d962f94"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
                 }
             ]
         }
@@ -65,5 +62,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617557532
+    "modified": 1617562026
 }

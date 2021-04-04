@@ -75,6 +75,10 @@ Text Domain:  casumi-consultancy
     text-decoration: none;
 } 
 
+/* #################################################
+* ####### Components ######
+* #################################################/
+
 /*
 * ### Component: Nav Social Networks
 * */
@@ -90,16 +94,6 @@ Text Domain:  casumi-consultancy
 }
 .nav-social-networks .social-network-icon.fa-google-plus-g{
     color: #DE4B38;
-}
-
-/*
-* ### Section: Slider and Call To Action 
-* */
-.slider-and-cta-sc .cta-cpt .heading-cta{
-    font-size: var(--primary-heading-font-size);
-}
-.slider-and-cta-sc .cta-cpt .heading-cta .last-letter{
-    color: var(--seconday-color);
 }
 
 /*
@@ -133,6 +127,53 @@ Text Domain:  casumi-consultancy
 .cta-cpt .content-cta{
     color: var(--gray-color);
     font-size: var(--text-font-size);
+}
+
+/*
+* ### Component: Slider
+* */
+.slider-cpt {
+    position: relative;
+}
+.slider-cpt .slide-arrow{
+    z-index: 9;
+    color: var(--gray-color);
+}
+
+/*
+* ### Component: Image Slider
+* */
+.image-slider-cpt{
+    max-width: 350px;
+}
+.image-slider-cpt .slide-arrow{
+    position: absolute;
+    bottom: 0;
+}
+.image-slider-cpt .slide-next{
+    right: 0;
+}
+.image-slider-cpt .slide-prev{
+    right: 36px;
+}
+.image-slider-cpt .image-slide-item{
+    max-height: 450px;
+    max-width: 350px;
+    object-fit: cover;
+}
+
+/* #################################################
+* ####### Sections ######
+* #################################################/
+
+/*
+* ### Section: Slider and Call To Action 
+* */
+.slider-and-cta-sc .cta-cpt .heading-cta{
+    font-size: var(--primary-heading-font-size);
+}
+.slider-and-cta-sc .cta-cpt .heading-cta .last-letter{
+    color: var(--seconday-color);
 }
 
 /*

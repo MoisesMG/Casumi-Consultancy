@@ -15,6 +15,10 @@ if( have_rows('dynamic_content') ):
 			case 'section_image_slider_and_call_to_action':
 				include( locate_template( "{$section_template_dir}-slider-and-cta.php", false, false ) );
 			break;
+
+			case 'section_common':
+				include( locate_template( "{$section_template_dir}-common.php", false, false ) );
+			break;
 		endswitch;
 	endwhile;
 endif; 
