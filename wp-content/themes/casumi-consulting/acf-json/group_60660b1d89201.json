@@ -1,6 +1,6 @@
 {
     "key": "group_60660b1d89201",
-    "title": "Team Member",
+    "title": "Component-Team Member",
     "fields": [
         {
             "key": "field_60660b27fde4f",
@@ -165,5 +165,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617300486
+    "modified": 1617504044
 }

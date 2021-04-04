@@ -1,6 +1,6 @@
 {
     "key": "group_606608d962f94",
-    "title": "Icon Box",
+    "title": "Component - Icon Box",
     "fields": [
         {
             "key": "field_606608ea9c8b4",
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617299756
+    "modified": 1617503933
 }

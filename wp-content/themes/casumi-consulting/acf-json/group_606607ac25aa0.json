@@ -1,17 +1,17 @@
 {
     "key": "group_606607ac25aa0",
-    "title": "Call To Action",
+    "title": "Component-Call To Action",
     "fields": [
         {
             "key": "field_606607b2853e8",
             "label": "Heading",
-            "name": "heading",
+            "name": "heading_cta",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -23,14 +23,14 @@
         },
         {
             "key": "field_606607cb853e9",
-            "label": "Subheading",
-            "name": "subheading",
+            "label": "Sub Heading",
+            "name": "sub_heading_cta",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -43,22 +43,41 @@
         {
             "key": "field_60660806853eb",
             "label": "Button",
-            "name": "button",
+            "name": "button_cta",
             "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "return_format": "array"
         },
         {
+            "key": "field_6069320bbac5b",
+            "label": "Use Headind as H1",
+            "name": "use_headind_as_h1_cta",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_606607e2853ea",
             "label": "Content",
-            "name": "content",
+            "name": "content_cta",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -92,5 +111,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617299573
+    "modified": 1617511519
 }

@@ -25,9 +25,9 @@ if ( ! function_exists( 'casumi_consulting_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Casumi Consulting, use a find and replace
-		 * to change 'casumi-consulting' to the name of your theme in all the template files.
+		 * to change 'casumi-consultancy' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'casumi-consulting', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'casumi-consultancy', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -47,12 +47,11 @@ if ( ! function_exists( 'casumi_consulting_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'casumi-consulting' ),
-			)
-		);
+		// Register Menu Locations
+		register_nav_menus( array(
+			'header_menu' => __( 'Primary Header Menu', 'casumi-consultancy' ),
+			'footer_menu' => __( 'Footer Menu', 'casumi-consultancy' )
+		) );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -94,8 +93,8 @@ if ( ! function_exists( 'casumi_consulting_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 250,
-				'width'       => 250,
+				'height'      => 80,
+				'width'       => 180,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)
@@ -122,16 +121,41 @@ add_action( 'after_setup_theme', 'casumi_consulting_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function casumi_consulting_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'casumi-consulting' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'casumi-consulting' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
+	/*** Register custom sidebars ***/
+	register_sidebar( array(
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',        
+		'name'=>__( 'Footer Sidebar Area 1', 'FCam' ),
+		'id' => 'footer_sidebar_1')
+	);
+
+	register_sidebar( array(
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',        
+		'name'=>__( 'Footer Sidebar Area 2', 'FCam' ),
+		'id' => 'footer_sidebar_2')
+	);
+
+	register_sidebar( array(
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',        
+		'name'=>__( 'Footer Sidebar Area 3', 'FCam' ),
+		'id' => 'footer_sidebar_3')
+	);
+
+	register_sidebar( array(
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',        
+		'name'=>__( 'Footer Sidebar Area 4', 'FCam' ),
+		'id' => 'footer_sidebar_4')
 	);
 }
 add_action( 'widgets_init', 'casumi_consulting_widgets_init' );
@@ -140,20 +164,32 @@ add_action( 'widgets_init', 'casumi_consulting_widgets_init' );
  * Enqueue scripts and styles.
  */
 function casumi_consulting_scripts() {
-	wp_enqueue_style( 'casumi-consulting-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'casumi-consulting-style', 'rtl', 'replace' );
-
-	wp_enqueue_script( 'casumi-consulting-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-
+	wp_enqueue_style( 'casumi-consultancy-style', get_stylesheet_uri(), array(), _S_VERSION );
+	
 	/**
 	 * Bootstrap
 	 */
 	wp_enqueue_style('bootstrap_css', get_stylesheet_directory_uri() . '/dist/css/bootstrap.min.css', array(), _S_VERSION);
-	wp_enqueue_script('bootstrap_js', get_stylesheet_directory_uri() . '/dist/js/bootstrap.bundle.min.js', array('jquery'), _S_VERSION, true);
+	wp_enqueue_script('bootstrap_js', get_stylesheet_directory_uri() . '/dist/js/bootstrap.min.js', array('jquery'), _S_VERSION, true);
+
+	/*
+	* Font Awesome
+	* */
+	wp_enqueue_style('font_awesome_css', get_stylesheet_directory_uri() . '/dist/css/fontawesome.min.css', array(), _S_VERSION);
+	wp_enqueue_style('font_awesome_solid_css', get_stylesheet_directory_uri() . '/dist/css/solid.min.css', array(), _S_VERSION);
+	wp_enqueue_style('font_awesome_brands_css', get_stylesheet_directory_uri() . '/dist/css/brands.min.css', array(), _S_VERSION);
+
+	/*
+	 * Slick Slider
+	 * */
+	wp_enqueue_style('slick_css', get_stylesheet_directory_uri() . '/dist/css/slick.css', array(),  _S_VERSION);
+	wp_enqueue_style('slick_theme_css', get_stylesheet_directory_uri() . '/dist/css/slick-theme.css', array(),  _S_VERSION);
+	wp_enqueue_script('slick_script', get_stylesheet_directory_uri() .'/dist/js/slick.min.js', array('jquery'), _S_VERSION, true);
+
+	/*
+	 * Main Scripts
+	 * */
+	wp_enqueue_script('main_js', get_stylesheet_directory_uri() . '/dist/js/main.js', array('jquery'), _S_VERSION, true);
 }
 add_action( 'wp_enqueue_scripts', 'casumi_consulting_scripts' );
 
@@ -177,10 +213,37 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+
+/*
+* Menu Utilities
+* */
+function mm_get_menu_items($menu_location)
+{
+	$locations = get_nav_menu_locations();
+	$menu = get_term($locations[$menu_location], 'nav_menu');
+
+	return wp_get_nav_menu_items($menu->term_id);
+}
+function mm_get_nav_menu_item_children( $parent_id, $menu_location, $depth = true )
+{
+	$nav_menu_item_list = array();
+	$nav_menu_items = mm_get_menu_items($menu_location);
+
+	foreach ( $nav_menu_items as $nav_menu_item )	{
+		if ( $nav_menu_item->menu_item_parent == $parent_id ) {
+			$nav_menu_item_list[] = $nav_menu_item;
+		}
+	}
+
+	return $nav_menu_item_list;
+}
+function get_current_url(){
+	$obj_id = get_queried_object_id();
+	$current_url = get_permalink( $obj_id );
+	return $current_url;
 }
 
+/*
+* Images Sizes
+* */
+add_image_size( 'image_slide', 400, 500, true );

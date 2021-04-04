@@ -1,6 +1,6 @@
 {
     "key": "group_60660a20b6a4c",
-    "title": "Overlapping Image",
+    "title": "Component-Overlapping Image",
     "fields": [
         {
             "key": "field_60660a2c5a43f",
@@ -68,5 +68,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617300054
+    "modified": 1617504020
 }

@@ -24,30 +24,43 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 
-	<header id="top-header" class="top-header">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<?php the_custom_logo(); ?>
+	<header id="" class="site-header">
+		<nav class="navbar navbar-expand-lg navbar-header navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<?php $image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full'); ?>
+					<img src="<?php echo esc_url( $image[0] ); ?>" alt="brand-image">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<?php 
+							$theme_location = "header_menu";
+							$menu_items = mm_get_menu_items($theme_location);
+
+							foreach($menu_items as $menu_item):
+								$nav_item_classes = implode(" ", $menu_item->classes);
+								$nav_item_classes .= get_current_url() == $menu_item->url ? "current-page" : "";
+
+								$item =  "<li class='nav-item {$nav_item_classes}'>";
+								$item .= "<a href='{$menu_item->url}' target='{$menu_item->target}' class='nav-link fw-bold'>{$menu_item->title}</a>";
+								$item .=  "</li>";
+								echo $item;
+							endforeach;
+						?>
+						<li class="nav-item ms-lg-5 ms-xl-5">
+							<a class="nav-link fw-bold" href="tel:<?php echo get_theme_mod('phone_contact'); ?>">
+								<?php echo get_theme_mod('phone_contact'); ?>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fw-bold">
+								<i class="fas fa-search"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>

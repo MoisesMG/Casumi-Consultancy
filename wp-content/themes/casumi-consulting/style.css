@@ -1,0 +1,149 @@
+/*
+Theme Name:   Casumi Consultancy
+Description:  Casumi Consultancy Custom Wordpress Theme
+Author:       Moises Mena
+Author URL:   Write here the author's blog or website url
+Template:     _s
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  casumi-consultancy
+*/
+
+/*
+* ### Variables
+* */
+:root{
+    --primary-color: #16133E;
+    --seconday-color: #F53B30;
+    --gray-color: #9CA1A8;
+    --light-gray-color: #F7F9FA;
+    --dark-gray-color: #656565;
+    --title-font-weight: 700;
+    --primary-heading-font-size: 36px;
+    --text-font-size: 12px;
+    --title-four-font-size: 12px;
+    --icon-width: 32px;
+    --button-text-color: white;
+    --transition: 300ms all ease-in-out;
+}
+
+/*
+* ### Reset
+* */
+
+
+/*
+* ### Header Styles
+* */
+.navbar-header .navbar-nav .nav-item .nav-link{
+    color: var(--primary-color);
+    font-size: 14px;
+}
+.navbar-header .navbar-nav .nav-item .nav-link:hover, 
+.navbar-header .navbar-nav .nav-item.current-page .nav-link{
+    color: var(--seconday-color);
+}
+ 
+/*
+* ### Footer Styles
+* */
+.site-footer .widget-title{
+    font-size: var(--title-four-font-size);
+    font-weight: var(--title-font-weight);
+}
+.site-footer .widget .menu{
+    padding: 0;
+    list-style-type: none;
+}
+.site-footer .widget .textwidget,
+.site-footer .widget .textwidget a, 
+.site-footer .widget .menu a,
+.site-footer .footer-credits,
+.site-footer .footer-nav-menu .nav-link
+{
+    color: var(--gray-color);
+    font-size: var(--text-font-size);
+}
+.site-footer .widget .textwidget a:hover, 
+.site-footer .widget .menu a:hover,
+.site-footer .footer-nav-menu .nav-link:hover{
+    color: var(--dark-gray-color);
+}
+.site-footer .widget .menu a,
+.site-footer .widget .textwidget a{
+    text-decoration: none;
+} 
+
+/*
+* ### Component: Nav Social Networks
+* */
+.nav-social-networks .social-network-icon{
+    background-color: var(--light-gray-color);
+    width: var(--icon-width);
+}
+.nav-social-networks .social-network-icon.fa-twitter{
+    color: #55ACEE;
+}
+.nav-social-networks .social-network-icon.fa-facebook-l{
+    color: #39599F;
+}
+.nav-social-networks .social-network-icon.fa-google-plus-g{
+    color: #DE4B38;
+}
+
+/*
+* ### Section: Slider and Call To Action 
+* */
+.slider-and-cta-sc .cta-cpt .heading-cta{
+    font-size: var(--primary-heading-font-size);
+}
+.slider-and-cta-sc .cta-cpt .heading-cta .last-letter{
+    color: var(--seconday-color);
+}
+
+/*
+* ### Component: Call To Action
+* */
+.cta-cpt {
+    max-width: 400px;
+}
+.cta-cpt .btn-cta{
+    background-color: var(--seconday-color);
+    color: var(--button-text-color);
+    transition: var(--transition);
+}
+.cta-cpt .btn-cta:hover{
+    background-color: transparent;
+    color: var(--seconday-color);
+}
+.cta-cpt .btn-cta,
+.cta-cpt .btn-cta:hover{
+    border-color: var(--seconday-color);
+}
+.cta-cpt .sub-heading-cta{
+    font-size: var(--text-font-size);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--seconday-color);
+}
+.cta-cpt .heading-cta{
+    color: var(--primary-color);
+}
+.cta-cpt .content-cta{
+    color: var(--gray-color);
+    font-size: var(--text-font-size);
+}
+
+/*
+* ### Medium diveces (Tablets and phones less than 992px
+* */
+@media (max-width: 991.99px){
+    /*
+    * ### Footer Styles
+    * */
+    .site-footer .widget .image{
+        margin: auto;
+        display: block;
+    }
+}

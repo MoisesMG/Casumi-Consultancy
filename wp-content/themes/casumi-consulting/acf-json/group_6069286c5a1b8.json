@@ -1,0 +1,76 @@
+{
+    "key": "group_6069286c5a1b8",
+    "title": "Dynamic Content",
+    "fields": [
+        {
+            "key": "field_606928768cf52",
+            "label": "Dynamic Content",
+            "name": "dynamic_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_60692886983b2": {
+                    "key": "layout_60692886983b2",
+                    "name": "section_image_slider_and_call_to_action",
+                    "label": "Section: Image Slider and Call to Action",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60692a670eecb",
+                            "label": "Image Slider and Call to Action",
+                            "name": "image_slider_and_call_to_action",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6069273d2ce6a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1617504993
+}
