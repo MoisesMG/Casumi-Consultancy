@@ -1,4 +1,4 @@
-<section class="custom-sc common-sc">
+<section id="<?php echo esc_attr( get_sub_field('id') ); ?>" class="custom-sc common-sc py-5 <?php echo esc_attr( get_sub_field('class') ); ?>">
     <div class="container">
         <div class="row gy-5 gy-lg-0">
             <?php if( have_rows('section_columns') ):

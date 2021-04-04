@@ -21,6 +21,7 @@ Text Domain:  casumi-consultancy
     --dark-gray-color: #656565;
     --title-font-weight: 700;
     --primary-heading-font-size: 36px;
+    --secondary-heading-font-size: 26px;
     --three-heading-font-size: 16px;
     --text-font-size: 12px;
     --title-four-font-size: 12px;
@@ -166,6 +167,9 @@ Text Domain:  casumi-consultancy
 /*
 * ### Component: Icon Box
 * */
+.icon-box-cpt.light-icon-box{
+    background-color: white;
+}
 .icon-box-cpt.light-icon-box .heading-icon-box{
     color: var(--primary-heading-font-size);
 }
@@ -200,11 +204,27 @@ Text Domain:  casumi-consultancy
     background-color: var(--seconday-color);
 }
 
-    
+/*
+* ### Component: Text
+* */    
+.text-cpt h2{
+    font-size: var(--secondary-heading-font-size);
+}
+.text-cpt h1, .text-cpt h2, .text-cpt h3,
+.text-cpt h4, .text-cpt h5, .text-cpt h6{
+    font-weight: 700;
+}
+.text-cpt.dark-text *{
+    color: var(--primary-heading-font-size);
+}
+.text-cpt.light-text *{
+    color: white;
+}
 
 /* #################################################
 * ####### Sections ######
 * #################################################/
+* */
 
 /*
 * ### Section: Slider and Call To Action 
@@ -214,6 +234,14 @@ Text Domain:  casumi-consultancy
 }
 .slider-and-cta-sc .cta-cpt .heading-cta .last-letter{
     color: var(--seconday-color);
+}
+
+/* #################################################
+* ####### Sections ######
+* #################################################/
+* */
+.features-box-sc{
+    background-image: linear-gradient(180deg, var(--primary-color) 50%, white 50% );
 }
 
 /*

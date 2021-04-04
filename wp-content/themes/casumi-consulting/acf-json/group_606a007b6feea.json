@@ -46,6 +46,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_606a328735e19": {
+                    "key": "layout_606a328735e19",
+                    "name": "component_text",
+                    "label": "Component Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_606a329035e1a",
+                            "label": "Component Text",
+                            "name": "component_text",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_606a31cba87b3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -70,5 +101,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617560238
+    "modified": 1617572532
 }

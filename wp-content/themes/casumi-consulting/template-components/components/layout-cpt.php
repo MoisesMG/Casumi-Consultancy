@@ -5,6 +5,9 @@ if( have_rows('layout_components') ):
 			case 'component_icon_box_carousel':
 				include( locate_template( "{$component_template_dir}-icon-box-carousel.php", false, false ) );
 			break;
+			case 'component_text':
+				include( locate_template( "{$component_template_dir}-text.php", false, false ) );
+			break;
 		endswitch;
 	endwhile;
 endif; 
