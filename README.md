@@ -20,4 +20,5 @@ Install only the theme and plugins using a WP instance from your preferred WP de
 
 - If you are using `WP-CL`, use in the `ROOT` `wp db import /wp-content/casumi-consultancy/backup/dev-local-db.sql`
 - Search replace with your current local domain `wp search-replace 'http://casumi-consultancy.local' 'CURRENT-LOCAL-DOMAIN'`
+- User admin is, `moises` and password `1234`. Also you can add a new admin user with `WP CLI`
 
