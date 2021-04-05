@@ -141,6 +141,16 @@ Text Domain:  casumi-consultancy
     z-index: 9;
     color: var(--gray-color);
 }
+.slider-cpt.slider-cpt .slide-arrow{
+    position: absolute;
+    bottom: 0;
+}
+.slider-cpt.slider-cpt .slide-next{
+    right: 0;
+}
+.slider-cpt.slider-cpt .slide-prev{
+    right: 36px;
+}
 
 /*
 * ### Component: Image Slider
@@ -148,7 +158,7 @@ Text Domain:  casumi-consultancy
 .image-slider-cpt{
     max-width: 350px;
 }
-.image-slider-cpt .slide-arrow{
+/*.image-slider-cpt .slide-arrow{
     position: absolute;
     bottom: 0;
 }
@@ -157,7 +167,7 @@ Text Domain:  casumi-consultancy
 }
 .image-slider-cpt .slide-prev{
     right: 36px;
-}
+}*/
 .image-slider-cpt .image-slide-item{
     max-height: 450px;
     max-width: 350px;
@@ -221,6 +231,27 @@ Text Domain:  casumi-consultancy
     color: white;
 }
 
+/*
+* ### Component Overlapping Image
+* */
+.overlapping-image-cpt{
+    min-height: 450px;
+}
+.overlapping-image-cpt .overlapping-image img{
+    box-shadow: -6px 6px 10px 0px rgba(0,0,0,0.2);
+}
+.overlapping-image-cpt .overlapping-image{
+    position: absolute;
+}
+.overlapping-image-cpt .back-image{
+    left: calc(50% - 230px);
+    top: 100px;
+}
+.overlapping-image-cpt .front-image{
+    left: calc(50% - 20px);
+    top: 0;
+}
+
 /* #################################################
 * ####### Sections ######
 * #################################################/
@@ -236,8 +267,37 @@ Text Domain:  casumi-consultancy
     color: var(--seconday-color);
 }
 
+/*
+* ### Section: Testimonial Slider
+* */
+.testimonial-slider-sc{
+    background-image: linear-gradient(90deg, transparent 25%, var(--primary-color) 25%);
+}
+.testimonial-slider-sc .photo-testimonial{
+    max-width: 300px;
+}
+.testimonial-slider-sc .heading-testimonial{
+    font-size: var(--secondary-heading-font-size);
+}
+.testimonial-slider-sc .content-testimonial{
+    font-size: var(--text-font-size);
+}
+.testimonial-slider-sc .name-testimonial{
+    color: var(--seconday-color);
+}
+.testimonial-slider-sc .job-position-testimonial{
+    color: var(--gray-color);
+}
+.testimonial-slider-sc .name-testimonial,
+.testimonial-slider-sc .job-position-testimonial{
+    font-size: 10px;
+}
+.testimonial-slider-sc .body-testimonial{
+    max-width: 350px;
+}
+
 /* #################################################
-* ####### Sections ######
+* ####### Custom Styles ######
 * #################################################/
 * */
 .features-box-sc{
@@ -254,5 +314,30 @@ Text Domain:  casumi-consultancy
     .site-footer .widget .image{
         margin: auto;
         display: block;
+    }
+
+    /*
+    * ### Section: Testimonial Slider
+    * */
+    .testimonial-slider-sc{
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+}
+
+/*
+* ### Small devices (landscape phones, less than 768px)
+* */
+@media (max-width: 767.98px) {
+    /*
+    * ### Component: Overlaping Image
+    * */
+    .overlapping-image-cpt .overlapping-image{
+        position: relative;
+    }
+    .overlapping-image-cpt .back-image,
+    .overlapping-image-cpt .front-image{
+        left: 0;
+        top: 0;
     }
 }

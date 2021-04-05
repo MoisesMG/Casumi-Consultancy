@@ -264,3 +264,5 @@ function count_rows( $field ){
 * Images Sizes
 * */
 add_image_size( 'image_slide', 350, 450, true );
+add_image_size( 'overlapping_image', 250, 350, true );
+add_image_size( 'testimonial_photo', 300, 300, true );

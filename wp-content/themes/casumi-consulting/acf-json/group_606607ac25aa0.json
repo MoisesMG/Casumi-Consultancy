@@ -75,6 +75,32 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_606a480f465b0",
+            "label": "Text Align",
+            "name": "text_align_cta",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-start": "Leff",
+                "text-center": "Center",
+                "text-end": "Right"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_606607e2853ea",
             "label": "Content",
             "name": "content_cta",
@@ -111,5 +137,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617511519
+    "modified": 1617578250
 }

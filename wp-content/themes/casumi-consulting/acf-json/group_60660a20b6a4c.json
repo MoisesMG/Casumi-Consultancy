@@ -3,12 +3,12 @@
     "title": "Component-Overlapping Image",
     "fields": [
         {
-            "key": "field_60660a2c5a43f",
-            "label": "Front Image",
-            "name": "front_image",
+            "key": "field_60660a415a440",
+            "label": "Back Image",
+            "name": "back_image_overlapping_image",
             "type": "image",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
@@ -16,7 +16,7 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "medium",
+            "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -27,20 +27,20 @@
             "mime_types": ""
         },
         {
-            "key": "field_60660a415a440",
-            "label": "Back Image",
-            "name": "back_image",
+            "key": "field_60660a2c5a43f",
+            "label": "Front Image",
+            "name": "front_image_overlapping_image",
             "type": "image",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "medium",
+            "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -68,5 +68,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617504020
+    "modified": 1617579357
 }

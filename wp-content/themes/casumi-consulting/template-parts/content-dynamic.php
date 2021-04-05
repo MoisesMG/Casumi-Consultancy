@@ -19,6 +19,10 @@ if( have_rows('dynamic_content') ):
 			case 'section_common':
 				include( locate_template( "{$section_template_dir}-common.php", false, false ) );
 			break;
+
+			case 'section_testimonial_slider':
+				include( locate_template( "{$section_template_dir}-testimonial-slider.php", false, false ) );
+			break;
 		endswitch;
 	endwhile;
 endif; 

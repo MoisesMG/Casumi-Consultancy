@@ -1,4 +1,4 @@
-<div class="custom-cpt cta-cpt mx-auto mx-lg-0">
+<div class="custom-cpt cta-cpt mx-auto mx-lg-0 <?php echo esc_attr( get_sub_field('text_align_cta') ); ?>">
     <?php if ( get_sub_field('sub_heading_cta') ): ?>
         <h3 class="sub-heading-cta mb-3 fw-bold"><?php the_sub_field('sub_heading_cta'); ?></h3>
     <?php endif; ?>

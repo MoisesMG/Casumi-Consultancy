@@ -77,6 +77,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_606a62eb30ddb": {
+                    "key": "layout_606a62eb30ddb",
+                    "name": "section_testimonial_slider",
+                    "label": "Section Testimonial Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_606a62f830ddc",
+                            "label": "Testimonial Slider",
+                            "name": "testimonial_slider",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_606a5fee396d1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Section",
@@ -103,5 +134,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617560325
+    "modified": 1617584933
 }

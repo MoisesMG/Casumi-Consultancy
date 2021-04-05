@@ -3,6 +3,22 @@
     "title": "Section-Image Slider and Call To Action",
     "fields": [
         {
+            "key": "field_606a4003d6bab",
+            "label": "Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_6069275894094",
             "label": "Image Slider",
             "name": "image_slider",
@@ -43,6 +59,27 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
+        },
+        {
+            "key": "field_606a4017d6bac",
+            "label": "Advanced Settings",
+            "name": "advanced_settings",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_606a38b9b919a"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -62,5 +99,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617510664
+    "modified": 1617575986
 }
