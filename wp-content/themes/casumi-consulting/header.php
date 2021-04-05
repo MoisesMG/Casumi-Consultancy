@@ -24,7 +24,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 
-	<header id="" class="site-header">
+	<header id="site-header" class="site-header">
 		<nav class="navbar navbar-expand-lg navbar-header navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">

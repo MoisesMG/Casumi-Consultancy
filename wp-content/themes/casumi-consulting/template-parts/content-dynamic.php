@@ -24,8 +24,12 @@ if( have_rows('dynamic_content') ):
 				include( locate_template( "{$section_template_dir}-testimonial-slider.php", false, false ) );
 			break;
 		endswitch;
-	endwhile;
-endif; 
+	endwhile;?>
+	<a href="#site-header" class="custom-cpt back-to-top-cpt">
+		<i class="px-2 py-2 shadow rounded-circle text-center circle-icon-cpt primary-icon transition fas fa-chevron-up"></i>
+	</a>
+<?php endif; ?> 
+
 
 
 

@@ -33,6 +33,9 @@ Text Domain:  casumi-consultancy
 /*
 * ### Reset
 * */
+html{
+    scroll-behavior: smooth;
+}
 
 /*
 * ### Utils
@@ -42,6 +45,15 @@ Text Domain:  casumi-consultancy
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     grid-row-gap: 25px;
     column-gap: 25px;
+}
+.primary-icon{
+    color: var(--primary-color);
+}
+.primary-icon:hover{
+    color: var(--seconday-color);
+}
+.transition{
+    transition: var(--transition);
 }
 
 /*
@@ -89,6 +101,24 @@ Text Domain:  casumi-consultancy
 /* #################################################
 * ####### Components ######
 * #################################################/
+
+/*
+* ### Component: Circle Icon
+* */
+.circle-icon-cpt{
+    background-color: var(--light-gray-color);
+    width: var(--icon-width);
+}
+
+/*
+* ### Component: Back To Top
+* */
+.back-to-top-cpt{
+    position: fixed;
+    z-index: 99;
+    bottom: 1rem;
+    right: 1rem;
+}
 
 /*
 * ### Component: Nav Social Networks
