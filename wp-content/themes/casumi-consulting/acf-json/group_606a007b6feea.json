@@ -139,6 +139,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_606a7cb069954": {
+                    "key": "layout_606a7cb069954",
+                    "name": "component_lastest_news",
+                    "label": "Component Lastest News",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_606a7cbd69955",
+                            "label": "Component Lastest News",
+                            "name": "component_lastest_news",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_606a7bef41c29"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -163,5 +194,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1617578607
+    "modified": 1617591524
 }

@@ -14,6 +14,9 @@ if( have_rows('layout_components') ):
 			case 'component_overlapping_image':
 				include( locate_template( "{$component_template_dir}-overlapping-image.php", false, false ) );
 			break;
+			case 'component_lastest_news':
+				include( locate_template( "{$component_template_dir}-lastest-news.php", false, false ) );
+			break;
 		endswitch;
 	endwhile;
 endif; 

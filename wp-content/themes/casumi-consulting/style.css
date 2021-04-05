@@ -34,6 +34,15 @@ Text Domain:  casumi-consultancy
 * ### Reset
 * */
 
+/*
+* ### Utils
+* */
+.grid-3-col{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-row-gap: 25px;
+    column-gap: 25px;
+}
 
 /*
 * ### Header Styles
@@ -252,6 +261,34 @@ Text Domain:  casumi-consultancy
     top: 0;
 }
 
+/*
+* ### Component: Card 
+* */
+.card-cpt{
+    text-decoration: none;
+    max-width: 300px;
+    border-bottom: 1px solid var(--gray-color);
+}
+.card-cpt .tags-card{
+    top: 0;
+    left: 0;
+}
+.card-cpt .tags-card .tag-card{
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.card-cpt .heading-card{
+    color: var(--primary-color);
+    font-size: var(--three-heading-font-size);
+}
+.card-cpt .author-name-card{
+    color: var(--seconday-color);
+}
+.card-cpt .article-date-card{
+    color: var(--gray-color);
+}
+
+
 /* #################################################
 * ####### Sections ######
 * #################################################/
@@ -303,6 +340,17 @@ Text Domain:  casumi-consultancy
 .features-box-sc{
     background-image: linear-gradient(180deg, var(--primary-color) 50%, white 50% );
 }
+.contact-us-call-to-action-sc{
+    background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0.9) 40%, transparent), url(/wp-content/uploads/2021/04/cta-bg.jpg);
+}
+.contact-us-call-to-action-sc .cta-cpt{
+    padding: 50px 0;
+    margin: auto !important;
+}
+.contact-us-call-to-action-sc .cta-cpt .content-cta{
+    color: var(--primary-color);
+}
+
 
 /*
 * ### Medium diveces (Tablets and phones less than 992px
