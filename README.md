@@ -11,7 +11,7 @@
 Install only the theme and plugins using a WP instance from your preferred WP dev env tool (Local by flywheel, mamp, xampp).
 
 - One WordPress is instaled, open the OS terminal and enter the Project path.
-- Clone this project repo from the installed WP `ROOT` folder into a temp folder `git clone https://MoisesMenaG@bitbucket.org/MoisesMenaG/casumi-consultancy.git temp`
+- Clone this project repo from the installed WP `ROOT` folder into a temp folder `git clone https://github.com/MoisesMG/Casumi-Consultancy.git temp`
 - Merge the files from temp to current root folder, use in the `ROOT` `rsync -arvzP temp/* .`
 - Also merge the hidden dotfiles `rsync -arvzP temp/.[^.]* .`
 - Delete the temp `rm -rf temp/`
